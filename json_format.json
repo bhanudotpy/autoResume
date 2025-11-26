@@ -1,0 +1,44 @@
+{
+    "summary": {
+        "summary_text": "..."
+    },
+    "experience": {
+        "experience_1_title_company_location": "...",
+        "experience_1_duration": "...",
+        "experience_1_bullets": [
+            "...",
+            "...",
+            "..."
+        ]
+    },
+    "projects": {
+        "project_1_title": "...",
+        "project_1_duration": "...",
+        "project_1_bullets": [
+            "...",
+            "...",
+            "..."
+        ]
+    },
+    "education": {
+        "masters_coursework": "..."
+    },
+    "skills": {
+        "skills_category_list": [
+            {
+                "category": "...",
+                "items": [
+                    "...",
+                    "...",
+                    "..."
+                ]
+            }
+        ]
+    },
+    "achievements": {
+        "achievements_bullets": [
+            "...",
+            "..."
+        ]
+    }
+}

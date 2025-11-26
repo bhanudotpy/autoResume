@@ -1,0 +1,69 @@
+{
+    "summary": {
+        "summary_text": "string (3-4 lines following Section 7 guidance, including 4-5 Tier 1 keywords)"
+    },
+    "experience": {
+        "experience_1_title_company_location": "string (format: Job Title | Company Name – Location)",
+        "experience_1_duration": "string (format: MMM YYYY - MMM YYYY or Present)",
+        "experience_1_bullets": [
+            "string (optimized bullet using Section 5 formulas)",
+            "string (3-4 bullets for recent roles)"
+        ],
+        "experience_2_title_company_location": "string (include if in input)",
+        "experience_2_duration": "string (include if in input)",
+        "experience_2_bullets": [
+            "string",
+            "string"
+        ]
+    },
+    "projects": {
+        "project_1_title": "string",
+        "project_1_duration": "string (format: MMM YYYY - MMM YYYY)",
+        "project_1_bullets": [
+            "string (2-3 bullets per project, include tech stack and metrics)",
+            "string"
+        ],
+        "project_2_title": "string (include if in input)",
+        "project_2_duration": "string (include if in input)",
+        "project_2_bullets": [
+            "string",
+            "string"
+        ]
+    },
+    "education": {
+        "masters_coursework": "string (comma-separated list of 4-6 JD-relevant graduate-level courses)"
+    },
+    "skills": {
+        "skills_category_list": [
+            {
+                "category": "string (category name from rulebook Section 2, e.g., Programming Languages)",
+                "items": [
+                    "string (Tier 1 keywords first)",
+                    "string",
+                    "string"
+                ]
+            },
+            {
+                "category": "string (e.g., Backend & Databases or Frameworks & Libraries)",
+                "items": [
+                    "string",
+                    "string",
+                    "string"
+                ]
+            },
+            {
+                "category": "string (typically 4-6 categories total)",
+                "items": [
+                    "string",
+                    "string"
+                ]
+            }
+        ]
+    },
+    "achievements": {
+        "achievements_bullets": [
+            "string (existing achievements enhanced with JD keywords if applicable)",
+            "string ([SUGGESTED] prefix if new recommendation)"
+        ]
+    }
+}
