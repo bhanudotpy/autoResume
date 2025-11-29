@@ -1,0 +1,89 @@
+{
+    "summary": {
+        "summary_text": "Software developer and data engineer with experience in building production-scale data pipelines, analytics systems, and backend services. Strong programming skills in Python, Java, JavaScript, and C++. Experienced in solving complex technical problems, cross-functional collaboration, and cloud computing technologies. Proven ability to mentor team members and drive process improvements while delivering scalable solutions."
+    },
+    "experience": {
+        "experience_1_title_company_location": "Software Developer Intern, Dev Global Services, Vijayawada, India",
+        "experience_1_duration": "Jul 2023 – Dec 2023",
+        "experience_1_bullets": [
+            "Built production data pipeline using Python and FastAPI processing 10K+ daily API requests with sub-100ms latency, supporting real-time enrollment analytics for 500+ concurrent users across 3 academic departments with microservices architecture and RESTful APIs",
+            "Resolved complex database performance issues by optimizing PostgreSQL via indexing and SQL tuning, reducing data retrieval latency by 40% and enabling instant search across 10K+ student records while ensuring system reliability",
+            "Architected and deployed microservices backend achieving 99.9% uptime and zero-downtime deployments, ensuring data quality and system reliability for critical enrollment workflows while collaborating with cross-functional team of 4 engineers in Agile environment",
+            "Demonstrated strong communication and time management skills maintaining 85%+ test coverage through CI/CD pipelines"
+        ],
+        "experience_2_title_company_location": "UX Design & Web Development Volunteer, University of Florida",
+        "experience_2_duration": "Sep 2024 – Dec 2024",
+        "experience_2_bullets": [
+            "Partnered with cross-team of engineers and faculty to architect data warehouse for Yantra educational platform, conducting user research with 50+ students to drive data-informed design decisions and define technical requirements for scalable analytics infrastructure",
+            "Designed analytics dashboards using React.js, JavaScript, HTML5, and PostgreSQL to extract insights from engagement data, enabling instructors to optimize content delivery for 1K+ users while implementing web technologies including JSON and AJAX",
+            "Drove process improvement initiatives through SQL-based user behavior analysis, identifying friction points that improved navigation efficiency by 35% while mentoring junior team members on data analysis techniques and best practices"
+        ]
+    },
+    "projects": {
+        "project_1_title": "High-Performance E-Commerce Analytics Data Warehouse",
+        "project_1_duration": "Feb 2025 – Jun 2025",
+        "project_1_bullets": [
+            "Architected end-to-end data warehouse and ETL pipeline using Python processing 100K+ e-commerce transactions across 3 years of marketplace data, demonstrating technical leadership in project execution while managing production workflows serving 10K+ daily queries",
+            "Deployed analytics system on AWS EC2 with cloud computing infrastructure and automated data quality monitoring, reducing analyst query time by 20% through SQL optimization and performance tuning with <0.1% error rate for real-time dashboards",
+            "Developed machine learning model achieving R² = 0.96 for predictive analytics using 5+ engineered features, collaborating with stakeholders to generate insights for seller performance, logistics optimization, and resolving complex technical issues"
+        ],
+        "project_2_title": "Art Auction & Marketplace Analytics Platform",
+        "project_2_duration": "Aug 2024 – Nov 2024",
+        "project_2_bullets": [
+            "Built scalable backend data pipeline using Node.js, JavaScript, and MongoDB supporting 100+ concurrent users, reducing query response times by 35% through strategic indexing and performance optimization for distributed systems",
+            "Integrated Python-based ML model via RESTful API achieving 93% classification accuracy, demonstrating strong cross-functional collaboration with frontend team to define data interfaces, technical specifications, and web technologies integration including JSON and REST APIs",
+            "Architected MongoDB schema to support real-time auction workflows, secure authentication processes, and complex problem-solving for scalable systems"
+        ]
+    },
+    "education": {
+        "masters_coursework": "Data Engineering, Advanced Data Structures, Algorithms, Database Systems, NLP, Machine Learning, Cloud Computing"
+    },
+    "skills": {
+        "skills_category_list": [
+            {
+                "category": "Languages & Databases",
+                "items": [
+                    "Python"
+                ]
+            },
+            {
+                "category": "Data Engineering & Analytics",
+                "items": [
+                    "ETL/ELT pipelines",
+                    "Big Data"
+                ]
+            },
+            {
+                "category": "ML & AI",
+                "items": [
+                    "PyTorch",
+                    "Feature engineering",
+                    "Statistical analysis"
+                ]
+            },
+            {
+                "category": "Web Technologies & Cloud",
+                "items": [
+                    "HTML5",
+                    "FastAPI",
+                    "AWS (EC2, S3)",
+                    "Cloud Computing"
+                ]
+            },
+            {
+                "category": "Tools & Methodologies",
+                "items": [
+                    "Git",
+                    "Microservices",
+                    "Process Improvement"
+                ]
+            }
+        ]
+    },
+    "achievements": {
+        "achievements_bullets": [
+            "Demonstrated technical leadership and problem-solving skills by presenting machine learning solution at HERE Technologies Hackathon on Land and House Price Prediction, showcasing predictive analytics expertise and ability to communicate complex technical concepts",
+            "Awarded USD 4,500 scholarship during Master's at University of Florida for strong academic record and a 25% merit scholarship during undergraduate studies"
+        ]
+    }
+}

@@ -152,7 +152,7 @@ def process_simple_replacements(doc, json_data):
     # Summary section
     if 'summary' in json_data:
         summary_data = json_data['summary']
-        replacements['[summary]'] = summary_data.get('summary', '')
+        replacements['[summary_text]'] = summary_data.get('summary_text', '')
     
     # Perform all simple replacements
     for paragraph in doc.paragraphs:
@@ -290,7 +290,7 @@ def generate_resume(template_path, output_path, json_input_path):
 
 # Example usage
 if __name__ == "__main__":
-    template_file = 'template_long.docx'
+    template_file = 'template.docx'
     output_file = 'resume_filled.docx'
     json_input_file = 'json_input.json'
     
