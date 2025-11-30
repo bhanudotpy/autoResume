@@ -1,10 +1,5 @@
-import { NextRequest, NextResponse } from 'next/server';
-import { GoogleGenerativeAI } from '@google/generative-ai';
+# JD ANALYSIS RULEBOOK GENERATOR
 
-const genAI = new GoogleGenerativeAI(process.env.NEXT_PUBLIC_GEMINI_API_KEY || '');
-
-// System Prompts (In a real app, these might be loaded from files)
-const JD_RULEBOOK_PROMPT = `
 You are an expert ATS specialist analyzing job descriptions for new grad resume optimization. Generate a comprehensive rulebook following this exact structure:
 
 ## OUTPUT STRUCTURE
@@ -35,7 +30,7 @@ For each priority include:
 - Red flag if missing: [Consequence]
 
 **5. NEW GRAD ACHIEVEMENT FORMULAS**
-- Primary: '[Action Verb] + [Tech] + [What Built] + [Realistic Metric]'
+- Primary: `[Action Verb] + [Tech] + [What Built] + [Realistic Metric]`
 - Good Verbs: Built, Developed, Implemented, Created, Designed, Contributed, Collaborated, Debugged, Tested, Deployed, Optimized
 - Avoid: Managed, Directed, Architected, Spearheaded
 - Appropriate Metrics: Performance (20-40% improvements), Scale (50-500 users, 1K-10K records), Contribution (15 bugs, 3 features), Team (2-5 people, 5 sprints)
@@ -68,9 +63,14 @@ Generate 6-8 bullet examples using JD keywords, new grad formulas, and prioritie
 - Active voice, no inflated language
 
 ---
-`;
 
-const RESUME_OPTIMIZER_PROMPT = `
+**JOB DESCRIPTION:**
+[INSERT JD HERE]
+
+---
+
+# PROMPT 2: AI RESUME OPTIMIZER
+
 You are an expert ATS resume optimizer for new grad technical resumes. Optimize the user's resume following the provided JD Analysis Rulebook.
 
 ## YOUR MISSION
@@ -130,102 +130,9 @@ You are an expert ATS resume optimizer for new grad technical resumes. Optimize 
 **After (28 words):** "Built RESTful API using Python and Flask to automate data retrieval from PostgreSQL database, reducing manual queries by 40% and improving response time by 2 seconds"
 
 ---
-`;
 
-export async function POST(req: NextRequest) {
-  try {
-    const { action, payload } = await req.json();
-    console.log('API Request Action:', action);
-    const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash-lite' });
+**JD ANALYSIS RULEBOOK:**
+[INSERT RULEBOOK HERE]
 
-    if (action === 'generate_rulebook') {
-      const { jd_text } = payload;
-      const prompt = `${JD_RULEBOOK_PROMPT}\n\n**JOB DESCRIPTION:**\n${jd_text}`;
-      const result = await model.generateContent(prompt);
-      const response = await result.response;
-      return NextResponse.json({ result: response.text() });
-    }
-
-    if (action === 'optimize_resume') {
-      const { rulebook_text, resume_json } = payload;
-      const prompt = `${RESUME_OPTIMIZER_PROMPT}\n\n**JOB DESCRIPTION ANALYSIS RULEBOOK:**\n${rulebook_text}\n\n**CURRENT RESUME JSON:**\n${JSON.stringify(resume_json)}`;
-      const result = await model.generateContent(prompt);
-      const response = await result.response;
-      let text = response.text();
-      console.log('Gemini Raw Output (Optimize):', text);
-      
-      // Improved JSON extraction
-      const jsonMatch = text.match(/\{[\s\S]*\}/);
-      if (jsonMatch) {
-          text = jsonMatch[0];
-      } else {
-          console.error('No JSON found in response');
-          throw new Error('No JSON found in response');
-      }
-
-      try {
-        const parsedJson = JSON.parse(text);
-        return NextResponse.json({ result: parsedJson });
-      } catch (e) {
-        console.error('JSON Parse Error:', e);
-        console.error('Failed Text:', text);
-        throw e;
-      }
-    }
-
-    if (action === 'chat_refine') {
-      const { current_resume_json, user_instruction, rulebook_text } = payload;
-      const prompt = `
-      You are an expert resume refiner. Update the user's resume based on their specific instruction while maintaining structure and optimization.
-
-      CRITICAL RULES:
-      1. DO NOT add, remove, or rename any JSON fields
-      2. Use EXACT same structure, keys, and nesting as input
-      3. ONLY modify content based on user instruction
-      4. Maintain all existing optimization (keywords, metrics, priorities)
-      5. Keep Tier 1/Tier 2 keywords intact unless specifically asked to change
-      6. Preserve bullet length mix (15/30 words) unless requested otherwise
-      7. Keep realistic new grad metrics and tone
-      8. Maintain exact phrases from Rulebook Section 3 unless instructed to remove
-
-      RULEBOOK:
-      ${rulebook_text}
-
-      CURRENT RESUME JSON:
-      ${JSON.stringify(current_resume_json)}
-
-      USER INSTRUCTION:
-      "${user_instruction}"
-
-      Return ONLY the updated valid JSON. No explanations or commentary.
-            `;
-      
-      const result = await model.generateContent(prompt);
-      const response = await result.response;
-      let text = response.text();
-      console.log('Gemini Raw Output (Chat):', text);
-
-      const jsonMatch = text.match(/\{[\s\S]*\}/);
-      if (jsonMatch) {
-          text = jsonMatch[0];
-      } else {
-          console.error('No JSON found in Chat response');
-          throw new Error('No JSON found in Chat response');
-      }
-
-      try {
-        const parsedJson = JSON.parse(text);
-        return NextResponse.json({ result: parsedJson });
-      } catch (e) {
-        console.error('Chat JSON Parse Error:', e);
-        console.error('Failed Chat Text:', text);
-        throw e;
-      }
-    }
-
-    return NextResponse.json({ error: 'Invalid action' }, { status: 400 });
-  } catch (error) {
-    console.error('API Error:', error);
-    return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
-  }
-}
+**CURRENT RESUME JSON:**
+[INSERT RESUME JSON HERE]

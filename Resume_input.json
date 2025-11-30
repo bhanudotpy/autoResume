@@ -1,0 +1,111 @@
+{
+  "summary": {
+    "summary_text": "Highly motivated Computer Science graduate with a strong foundation in Python and C++, eager to contribute as a Software Engineer at a leading global trading firm. Proven ability to build real-world applications and solve complex technical problems, with experience in developing high-performance data pipelines and backend services. Seeking to leverage analytical skills and a collaborative mindset to drive innovation in financial markets."
+  },
+  "experience": {
+    "experience_1_title_company_location": "Software Developer Intern, Dev Global Services, Vijayawada, India",
+    "experience_1_duration": "Jul 2023 – Dec 2023",
+    "experience_1_bullets": [
+      "Built production data pipeline using Python and FastAPI, processing 10K+ daily API requests with sub-100ms latency, supporting real-time enrollment analytics for 500+ concurrent users with microservices architecture and RESTful APIs.",
+      "Resolved complex database performance issues by optimizing PostgreSQL via indexing and SQL tuning, reducing data retrieval latency by 40% and enabling instant search across 10K+ student records, contributing to continuous improvement.",
+      "Implemented well-architected microservices backend achieving 99.9% uptime and zero-downtime deployments, ensuring data quality and system reliability for critical enrollment workflows while collaborating with a cross-functional team of 4 engineers in an Agile environment.",
+      "Developed backend services that enabled real-time data processing for critical decision-making, while maintaining 85%+ test coverage through CI/CD pipelines."
+    ],
+    "experience_2_title_company_location": "UX Design & Web Development Volunteer, University of Florida",
+    "experience_2_duration": "Sep 2024 – Dec 2024",
+    "experience_2_bullets": [
+      "Partnered with a cross-team of engineers and faculty to architect a data warehouse for the Yantra educational platform, conducting user research with 50+ students to drive data-informed design decisions and define technical requirements.",
+      "Designed analytics dashboards using React.js, JavaScript, HTML5, and PostgreSQL to extract insights from engagement data, enabling instructors to optimize content delivery for 1K+ users.",
+      "Drove process improvement initiatives through SQL-based user behavior analysis, identifying friction points that improved navigation efficiency by 35%."
+    ]
+  },
+  "projects": {
+    "project_1_title": "High-Performance E-Commerce Analytics Data Warehouse",
+    "project_1_duration": "Feb 2025 – Jun 2025",
+    "project_1_bullets": [
+      "Architected an end-to-end data warehouse and ETL pipeline using Python processing 100K+ e-commerce transactions across 3 years of marketplace data, demonstrating technical leadership in project execution.",
+      "Deployed analytics system on AWS EC2 with cloud computing infrastructure and automated data quality monitoring, reducing analyst query time by 20% through SQL optimization and performance tuning.",
+      "Developed a machine learning model achieving R² = 0.96 for predictive analytics using 5+ engineered features, collaborating with stakeholders to generate insights for seller performance and logistics optimization."
+    ],
+    "project_2_title": "Art Auction & Marketplace Analytics Platform",
+    "project_2_duration": "Aug 2024 – Nov 2024",
+    "project_2_bullets": [
+      "Built a scalable backend data pipeline using Node.js, JavaScript, and MongoDB supporting 100+ concurrent users, reducing query response times by 35% through strategic indexing and performance optimization.",
+      "Integrated a Python-based ML model via RESTful API achieving 93% classification accuracy, demonstrating strong cross-functional collaboration with the frontend team to define data interfaces and technical specifications.",
+      "Architected a MongoDB schema to support real-time auction workflows and secure authentication processes, tackling complex problem-solving for scalable systems."
+    ]
+  },
+  "education": {
+    "masters_coursework": "Data Structures and Algorithms, Object-Oriented Programming, Database Systems, Operating Systems, Software Engineering Principles, Introduction to Financial Markets"
+  },
+  "skills": {
+    "skills_category_list": [
+      {
+        "category": "Programming Languages",
+        "items": [
+          "Python",
+          "C++",
+          "Java",
+          "JavaScript"
+        ]
+      },
+      {
+        "category": "Backend Development & Databases",
+        "items": [
+          "SQL",
+          "PostgreSQL",
+          "MySQL",
+          "MongoDB",
+          "Node.js",
+          "FastAPI"
+        ]
+      },
+      {
+        "category": "Computer Science Core Concepts",
+        "items": [
+          "Data Structures",
+          "Algorithms",
+          "Object-Oriented Programming",
+          "System Design"
+        ]
+      },
+      {
+        "category": "Software Engineering Practices",
+        "items": [
+          "Microservices",
+          "RESTful APIs",
+          "ETL/ELT pipelines",
+          "Cloud Computing",
+          "Database Systems",
+          "Operating Systems"
+        ]
+      },
+      {
+        "category": "Tools & Methodologies",
+        "items": [
+          "Git",
+          "Linux",
+          "CI/CD pipelines",
+          "Agile",
+          "Docker",
+          "AWS (EC2, S3)"
+        ]
+      },
+      {
+        "category": "Analytical & Problem-Solving",
+        "items": [
+          "Performance Optimization",
+          "Predictive Analytics",
+          "Data Analysis",
+          "Algorithmic Design"
+        ]
+      }
+    ]
+  },
+  "achievements": {
+    "achievements_bullets": [
+      "Demonstrated technical leadership and problem-solving skills by presenting a machine learning solution at the HERE Technologies Hackathon on Land and House Price Prediction, showcasing predictive analytics expertise.",
+      "Awarded USD 4,500 scholarship during Master's at University of Florida for strong academic record and a 25% merit scholarship during undergraduate studies."
+    ]
+  }
+}

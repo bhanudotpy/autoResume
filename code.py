@@ -290,8 +290,15 @@ def generate_resume(template_path, output_path, json_input_path):
 
 # Example usage
 if __name__ == "__main__":
-    template_file = 'template.docx'
-    output_file = 'resume_filled.docx'
-    json_input_file = 'json_input.json'
+    import sys
+    
+    if len(sys.argv) > 3:
+        template_file = sys.argv[1]
+        output_file = sys.argv[2]
+        json_input_file = sys.argv[3]
+    else:
+        template_file = 'Resume_template.docx'
+        output_file = 'Resume_filled.docx'
+        json_input_file = 'Resume_input.json'
     
     generate_resume(template_file, output_file, json_input_file)
